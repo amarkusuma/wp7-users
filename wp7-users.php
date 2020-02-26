@@ -27,4 +27,4 @@ function add_user_role()
     );
 }
 
-add_action('init', 'add_user_role');
+register_activation_hook(__FILE__, 'add_ruser_role');
